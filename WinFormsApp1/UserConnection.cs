@@ -16,6 +16,9 @@ namespace Client
         IPAddress address;
         int port;
         string name;
+        private string text;
+        private IPAddress iPAddress;
+        private int v;
 
         public string Name 
         {
@@ -41,6 +44,13 @@ namespace Client
             this.address = address;
             this.port = port;
             this.name = name;
+        }
+
+        public UserConnection(string text, IPAddress iPAddress, int v)
+        {
+            this.text = text;
+            this.iPAddress = iPAddress;
+            this.v = v;
         }
 
         public async Task ConnectAsync() => await Task.Run(Connect);
