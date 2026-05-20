@@ -246,6 +246,7 @@ namespace WinFormsApp1
             Controls.Add(groupBox1);
             Name = "Form1";
             Text = "Form1";
+            FormClosing += Form1_FormClosing;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             groupBox2.ResumeLayout(false);

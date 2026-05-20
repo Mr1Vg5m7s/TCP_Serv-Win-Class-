@@ -1,3 +1,9 @@
+using Client;
+using System;
+using System.Net;
+using System.Net.Sockets;
+using System.Text;
+
 namespace WinFormsApp1
 {
     public partial class Form1 : Form
@@ -56,5 +62,11 @@ namespace WinFormsApp1
         {
 
         }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+           
+        }
+
     }
 }
